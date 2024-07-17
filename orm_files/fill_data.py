@@ -1,8 +1,5 @@
-from datetime import datetime
-import faker
-from random import randint, choice
 import sqlite3
-from connection import database
+from health_app.orm_files.connection import database
 
 GOALS = [('lose weights',), ('gain weights',), ('growth muscles',)]
 ACTIONS = [{'running': 8}, {'training': 9}, {'swimming': 7}, {'shopping': 1.3}, {'football': 7.5}, {'dancing': 6.5},

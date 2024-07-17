@@ -1,4 +1,4 @@
-from connection import create_connection, database
+from health_app.orm_files.connection import create_connection, database
 
 def create_table(conn, sql_path):
     with open(sql_path) as file:
@@ -12,7 +12,7 @@ def create_table(conn, sql_path):
 
 def main():
     with create_connection(database) as conn:
-        create_table(conn, 'sql_files/create_tables.sql')
+        create_table(conn, '../sql_files/create_tables.sql')
 
 
 if __name__ == "__main__":

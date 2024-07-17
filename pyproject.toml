@@ -7,6 +7,12 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+aiogram = "^3.8.0"
+mongoengine = "^0.28.2"
+python-dotenv = "^1.0.1"
+aiohttp = "^3.9.5"
+beautifulsoup4 = "^4.12.3"
+lxml = "^5.2.2"
 
 
 [build-system]
